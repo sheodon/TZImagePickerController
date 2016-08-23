@@ -24,6 +24,10 @@ static CGSize AssetGridThumbnailSize;
 static CGFloat TZScreenWidth;
 static CGFloat TZScreenScale;
 
++ (instancetype)shared {
+    return self.manager;
+}
+
 + (instancetype)manager {
     static TZImageManager *manager;
     static dispatch_once_t onceToken;

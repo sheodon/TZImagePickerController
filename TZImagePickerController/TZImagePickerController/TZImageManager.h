@@ -16,6 +16,7 @@
 
 @property (nonatomic, strong) PHCachingImageManager *cachingImageManager;
 
++ (instancetype)shared;
 + (instancetype)manager;
 
 @property (nonatomic, assign) BOOL shouldFixOrientation;
